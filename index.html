@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherInfo</title>
-    <!-- custom css -->
-     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container"></div>
-		<div class="weather-card">
-			<h1>
-                = Weather App =
-			</h1>
-			<h3>
-                Check Your city Weather
-            </h3>
-			<input type="text" id="city-input"
-				placeholder="Enter city name">
-			<button id="btn"
-					onclick="weatherFn($('#city-input').val())">
-					Get Weather
-			</button>
-			<div id="weather-info"
-				class="animate__animated animate__fadeIn">
-				<h3 id="city-name"></h3>
-				<p id="date"></p>
-				<img class="weather-icon" src="icon.png" alt="" height="100px" width="100px">
-				<p id="temperature"></p>
-				<p id="description"></p>
-				<p id="wind-speed"></p>
-			</div>
-		</div>
-	</div>
-    <!-- some jquery -->
-	<script src=
-"https://code.jquery.com/jquery-3.6.0.min.js">
-	</script>
-	<script src=
-"https://momentjs.com/downloads/moment.min.js">
-	</script>
-	<script src="index.js"></script>
-</body>
+    <!-- Custom CSS -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-card">
+        <h1>= Weather App =</h1>
+        <h3>Check Your City Weather</h3>
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="btn" onclick="weatherFn($('#city-input').val())">
+          Get Weather
+        </button>
+        <div id="weather-info" class="animate__animated animate__fadeIn">
+          <h3 id="city-name"></h3>
+          <p id="date"></p>
+          <img
+            class="weather-icon"
+            src="icon.png"
+            alt="Weather Icon"
+            height="100px"
+            width="100px"
+          />
+          <p id="temperature"></p>
+          <p id="description"></p>
+          <p id="wind-speed"></p>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery and Moment.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="src/main.js"></script>
+  </body>
 </html>
