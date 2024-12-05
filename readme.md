@@ -45,4 +45,4 @@ Run the project
 
 # license
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://raw.githubusercontent.com/PatellAbhishekk/luma/refs/heads/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://raw.githubusercontent.com/PatellAbhishekk/weatherInfo/refs/heads/main/LICENSE)
